@@ -1,4 +1,4 @@
-# Crack the Hash — TryHackMe Writeup
+# Crack the Hash: TryHackMe Writeup
 
 **Room:** [https://tryhackme.com/room/crackthehash](https://tryhackme.com/room/crackthehash)  
 **Difficulty:** Easy  
@@ -27,7 +27,7 @@ Before cracking, you need to know what you're dealing with. Key identification a
 
 ---
 
-## Task 1 — Level 1
+## Level 1
 
 ### 1. `48bb6e862e54f2a795ffc4e541caed4d`
 
@@ -105,7 +105,7 @@ Hashcat didn't find a match in rockyou.txt. Fell back to an online lookup tool: 
 
 ---
 
-## Task 2 — Level 2
+## Level 2
 
 This level introduces less common algorithms and salted hashes. All answers are in rockyou.txt, but online tools alone won't cut it here.
 
