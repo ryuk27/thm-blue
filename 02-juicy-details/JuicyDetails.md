@@ -47,7 +47,7 @@ Retrieved via **ftp, anonymous** login — confirmed in vsftpd.log.
 ### Persistence / Shell Access
 Shell access gained via **ssh, www-data** — confirmed in auth.log.
 
-![SSH login in auth.log](screenshots/ssh_access.png)
+![SSH login in auth.log](screenshots/ssh.png)
 
 ## MITRE ATT&CK Mapping
 | Technique | ID |
