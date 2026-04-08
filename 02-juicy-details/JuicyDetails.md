@@ -21,19 +21,19 @@ via User-Agent strings in access.log — in order of occurrence:
 Hydra targeted `/rest/user/login`. Attack was successful — confirmed via 
 HTTP 200 response at `11/Apr/2021:09:16:31 +0000`
 
-![Hydra brute force success in access.log](screenshots/bruteforce_success.png)
+![Hydra brute force success in access.log](screenshots/hydra.png)
 
 ### SQL Injection
 sqlmap exploited `/rest/products/search` via parameter `q`, extracting
 **email and password** fields from the database.
 
-![SQLmap activity in access.log](screenshots/sqli_endpoint.png)
+![SQLmap activity in access.log](screenshots/sqlmap.png)
 
 ### User Enumeration
 Attacker scraped customer email addresses from the **product reviews** 
 section via abnormal query patterns in access.log.
 
-![Product reviews scraping in access.log](screenshots/email_scrape.png)
+![Product reviews scraping in access.log](screenshots/product-reviews.png)
 
 ### Data Exfiltration
 Attacker accessed `/ftp` endpoint to retrieve files:
@@ -42,7 +42,7 @@ Attacker accessed `/ftp` endpoint to retrieve files:
 
 Retrieved via **ftp, anonymous** login — confirmed in vsftpd.log.
 
-![FTP file retrieval in vsftpd.log](screenshots/ftp_exfil.png)
+![FTP file retrieval in vsftpd.log](screenshots/curl-fero.png)
 
 ### Persistence / Shell Access
 Shell access gained via **ssh, www-data** — confirmed in auth.log.
