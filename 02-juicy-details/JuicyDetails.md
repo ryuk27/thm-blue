@@ -1,4 +1,4 @@
-# THM: Juicy Details
+# THM — Juicy Details
 **Platform:** TryHackMe | **Category:** Log Analysis | **Difficulty:** Easy
 
 ## Scenario
@@ -15,7 +15,7 @@ Attacker conducted staged reconnaissance using multiple tools identified
 via User-Agent strings in access.log — in order of occurrence:
 **nmap, hydra, sqlmap, curl, feroxbuster**
 
-![User-Agent strings in access.log](screenshots/recon_useragent.png)
+![User-Agent strings in access.log](screenshots/nmap.png)
 
 ### Brute Force
 Hydra targeted `/rest/user/login`. Attack was successful — confirmed via 
