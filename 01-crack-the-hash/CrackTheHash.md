@@ -1,4 +1,4 @@
-# THM: Crack the Hash
+# THM Crack the Hash
 **Platform:** TryHackMe | **Category:** Cryptography / Password Cracking | **Difficulty:** Easy
 
 ## Tools Used
