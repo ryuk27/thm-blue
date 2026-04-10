@@ -9,8 +9,8 @@ Writeups for TryHackMe rooms focused on blue team and SOC analyst skills — cov
 | # | Room | Category |
 |---|------|----------|
 | 01 | [Crack the Hash](./01-crack-the-hash/CrackTheHash.md) | Cryptography |
-| 02 | [Juicy Details](./02-juicy-details/JuicyDetails.md)| Log Analysis|
-| 03 | | |
+| 02 | [Juicy Details](./02-juicy-details/JuicyDetails.md)| Log Analysis |
+| 03 | [Dunkle Materie](./03-dunkle-materie/DunkleMaterie.md)| Ransomware Investigation |
 | 04 | | |
 | 05 | | |
 | 06 | | |
