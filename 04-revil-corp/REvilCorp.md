@@ -1,4 +1,4 @@
-# THM — REvil Corp
+# THM REvil Corp
 **Platform:** TryHackMe | **Category:** Endpoint Forensics / Incident Response | **Difficulty:** Medium
 
 ## Scenario
@@ -19,7 +19,7 @@ Identified compromised employee and OS via Redline System Information tab.
 ![Redline system information](screenshots/system_info.png)
 
 ### Initial Access — Malicious Download
-Malicious binary identified via File Download History — user downloaded 
+Malicious binary identified via File Download History, user downloaded 
 and executed the file directly from browser.
 
 ![File download history showing malicious binary](screenshots/download_history.png)
