@@ -1,4 +1,4 @@
-# THM — Juicy Details
+# THM Juicy Details
 **Platform:** TryHackMe | **Category:** Log Analysis | **Difficulty:** Easy
 
 ## Scenario
