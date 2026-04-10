@@ -1,4 +1,4 @@
-# THM — Dunkle Materie
+# THM Dunkle Materie
 **Platform:** TryHackMe | **Category:** Ransomware Investigation / Incident Response | **Difficulty:** Medium
 
 ## Scenario
