@@ -13,7 +13,7 @@ Firewall alerted SOC that a Sales department machine contacted malicious domains
 ## Investigation Findings
 
 ### Malicious Process Identification
-Identified typosquatting via `exploreer.exe` (note double 'e') — 
+Identified typosquatting via `exploreer.exe` (note double 'e'), 
 a clear masquerading attempt against legitimate `explorer.exe`.
 
 **PIDs spawned:** 8644, 7128
@@ -21,7 +21,7 @@ a clear masquerading attempt against legitimate `explorer.exe`.
 ![ProcDOT process tree showing exploreer.exe](screenshots/procdot_process.png)
 
 ### Execution Path
-Ransomware executed from user's temp directory — common delivery location 
+Ransomware executed from user's temp directory, common delivery location 
 for malware dropped via phishing or drive-by download.
 
 **Full path:** `C:\Users\sales\AppData\Local\Temp\exploreer.exe`
@@ -35,7 +35,7 @@ Ransomware transmitted encrypted system data via HTTP POST to two C2 domains:
 
 **User-Agent used:** `Firefox/89.0` (masquerading as legitimate browser traffic)
 
-Both domains returned **403 Forbidden** — blocked by **Cisco Umbrella** 
+Both domains returned **403 Forbidden** blocked by **Cisco Umbrella** 
 cloud security service, preventing successful exfiltration.
 
 ![Wireshark HTTP POST to C2](screenshots/wireshark_post.png)
@@ -66,11 +66,11 @@ as **BlackMatter Ransomware**.
 | Data Encrypted for Impact | T1486 |
 
 ## Defensive Takeaways
-- Monitor temp directory execution — legitimate software rarely 
+- Monitor temp directory execution, legitimate software rarely 
   executes from AppData\Local\Temp
 - HTTP POST to unknown external IPs from endpoints is a high-confidence 
   C2 indicator — alert on this in SIEM
-- DNS filtering (Cisco Umbrella) successfully blocked exfiltration — 
+- DNS filtering (Cisco Umbrella) successfully blocked exfiltration,  
   demonstrates value of layered security controls
-- Typosquatting process names evade casual inspection — use process 
+- Typosquatting process names evade casual inspection, use process 
   baseline monitoring to catch deviations
