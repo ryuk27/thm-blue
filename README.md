@@ -33,10 +33,3 @@ Writeups for TryHackMe rooms focused on blue team and SOC analyst skills — cov
 | 23 | | |
 | 24 | | |
 | 25 | | |
-| 26 | | |
-| 27 | | |
-| 28 | | |
-| 29 | | |
-| 30 | | |
-| 31 | | |
-| 32 | | |
