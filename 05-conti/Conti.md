@@ -1,4 +1,4 @@
-# THM — Conti
+# THM Conti
 **Platform:** TryHackMe | **Category:** SIEM / Ransomware Investigation | **Difficulty:** Medium
 
 ## Scenario
@@ -15,7 +15,7 @@ discovered on server. Investigate using Splunk to reconstruct the attack chain.
 ## Investigation Findings
 
 ### Ransomware Location
-Identified via Splunk Image field analysis — cmd.exe found in abnormal 
+Identified via Splunk Image field analysis; cmd.exe found in abnormal 
 user directory, indicating masquerading.
 
 **Path:** `C:\Users\Administrator\Documents\cmd.exe`  
@@ -32,7 +32,7 @@ Confirmed via `index=* EventCode=11` filtered to TargetFileName.
 
 ![Splunk showing readme.txt in multiple locations](screenshots/readme_propagation.png)
 
-### Persistence — New User Creation
+### Persistence: New User Creation
 Attacker added a backdoor user account for persistent access.
 
 **Command:** `net user /add securityninja hardToHack123$`  
@@ -59,12 +59,12 @@ Confirmed via `EventCode=8` TargetImage analysis.
 
 ![Splunk LSASS credential access](screenshots/lsass_access.png)
 
-### Initial Access — Web Shell (ProxyLogon)
+### Initial Access: Web Shell (ProxyLogon)
 Attacker deployed a web shell to the Exchange OWA auth directory.
 
 **Web shell:** `i3gfPctK1c2x.aspx`  
 Identified by filtering IIS logs for POST requests with wildcard 
-`index=* sourcetype="iis" cs_method=POST *.aspx*` — suspicious 
+`index=* sourcetype="iis" cs_method=POST *.aspx*`, suspicious 
 filename surfaced under `cs_uri_stem` field.
 
 **Command executed:**  
@@ -90,9 +90,9 @@ External research confirmed three CVEs leveraged in the Exchange exploit:
 | Data Encrypted for Impact | T1486 |
 
 ## Defensive Takeaways
-- Exchange servers should be patched immediately — ProxyLogon 
+- Exchange servers should be patched immediately; ProxyLogon 
   CVEs were heavily exploited in 2021 ransomware campaigns
-- Monitor LSASS access via Sysmon EventCode=8 — high confidence 
+- Monitor LSASS access via Sysmon EventCode=8, high confidence 
   credential theft indicator
 - Alert on cmd.exe or system binaries executing from user 
   writable directories
