@@ -13,7 +13,7 @@ Writeups for TryHackMe rooms focused on blue team and SOC analyst skills — cov
 | 03 | [Dunkle Materie](./03-dunkle-materie/DunkleMaterie.md) | Ransomware Investigation |
 | 04 | [REvil Corp](./04-revil-corp/REvilCorp.md)| Endpoint Forensics |
 | 05 | [Conti](./05-conti/Conti.md) | Splunk Investigation |
-| 06 | | |
+| 06 | [Block](./06-block/Block.md) | Network Forensics |
 | 07 | | |
 | 08 | | |
 | 09 | | |
