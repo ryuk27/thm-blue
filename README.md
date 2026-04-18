@@ -14,7 +14,7 @@ Writeups for TryHackMe rooms focused on blue team and SOC analyst skills — cov
 | 04 | [REvil Corp](./04-revil-corp/REvilCorp.md)| Endpoint Forensics |
 | 05 | [Conti](./05-conti/Conti.md) | Splunk Investigation |
 | 06 | [Block](./06-block/Block.md) | Network Forensics |
-| 07 | | |
+| 07 | [Extracted](./07-extracted/Extracted.md) | Network Forensics |
 | 08 | | |
 | 09 | | |
 | 10 | | |
