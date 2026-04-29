@@ -15,21 +15,4 @@ Writeups for TryHackMe rooms focused on blue team and SOC analyst skills — cov
 | 05 | [Conti](./05-conti/Conti.md) | Splunk Investigation |
 | 06 | [Block](./06-block/Block.md) | Network Forensics |
 | 07 | [Extracted](./07-extracted/Extracted.md) | Network Forensics |
-| 08 | | |
-| 09 | | |
-| 10 | | |
-| 11 | | |
-| 12 | | |
-| 13 | | |
-| 14 | | |
-| 15 | | |
-| 16 | | |
-| 17 | | |
-| 18 | | |
-| 19 | | |
-| 20 | | |
-| 21 | | |
-| 22 | | |
-| 23 | | |
-| 24 | | |
-| 25 | | |
+| 08 | [Directory](./08-directory/Directory.md) | Active Directory Attack Analysis |
