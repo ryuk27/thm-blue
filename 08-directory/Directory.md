@@ -1,4 +1,4 @@
-# THM: Directory
+# THM Directory
 **Platform:** TryHackMe | **Category:** Network Forensics / Active Directory Attack Analysis | **Difficulty:** Hard
 
 ## Scenario
